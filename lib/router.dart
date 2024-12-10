@@ -1,4 +1,5 @@
 import 'package:flutter_application_pizza/my_app.dart';
+import 'package:flutter_application_pizza/pizza/presentation/pages/formulario_pizza.dart';
 import 'package:flutter_application_pizza/pizza/presentation/pages/lista_pizzas_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,6 +15,10 @@ final router = GoRouter(
     GoRoute(
       path: '/pizza',
       builder: (context, state) => const ListaPizzasPage(),
+    ),
+    GoRoute(
+      path: '/pizza/create',
+      builder: (context, state) => const FormularioPizza(),
     ),
   ],
 );
