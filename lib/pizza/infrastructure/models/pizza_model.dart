@@ -2,7 +2,7 @@ import 'package:flutter_application_pizza/pizza/domain/pizza.dart';
 
 class PizzaModel extends PizzaEntity {
   PizzaModel({
-    required super.pizId,
+    super.pizId,
     required super.pizName,
     required super.pizOrigin,
   });
@@ -17,6 +17,7 @@ class PizzaModel extends PizzaEntity {
 
   Map<String, dynamic> toJson() {
     return {
+      'id': pizId,
       'name': pizName,
       'origin': pizOrigin,
     };

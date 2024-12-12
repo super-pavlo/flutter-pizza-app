@@ -18,7 +18,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/pizza/create',
-      builder: (context, state) => const FormularioPizza(),
+      builder: (context, state) => FormularioPizza(),
     ),
   ],
 );
